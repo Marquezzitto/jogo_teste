@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morri de Novo — o jogo que quer te ver passar raiva</title>
+  <meta name="description" content="Morri de Novo (Fase Traiçoeira): um platformer de 15 fases onde nada é o que parece. Descubra as armadilhas e passe com o menor número de mortes.">
+  <meta property="og:title" content="Morri de Novo">
+  <meta property="og:description" content="15 fases. Armadilhas que mentem. Quantas vezes você vai morrer?">
+  <meta property="og:image" content="assets/poster.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#topo">MORRI<span>DE</span>NOVO</a>
+  <nav>
+    <a href="#jogo">O jogo</a>
+    <a href="#mundos">Mundos</a>
+    <a href="#experimente">Experimente</a>
+    <a href="#gameplay">Gameplay</a>
+    <a class="btn small" href="#desafio">Desafio</a>
+  </nav>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero">
+    <video class="hero-bg" src="assets/loop.mp4" poster="assets/poster.jpg" autoplay muted loop playsinline></video>
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Platformer · 3 mundos · 15 fases · 0 piedade</p>
+      <h1>Morri<br>de Novo</h1>
+      <p class="lead">Você gosta de um desafio? Ótimo. Esse chão some, esse bloco mente e aquela porta <em>parece</em> segura.<br>
+      Descubra o truque de cada fase e chegue ao fim com o <strong>menor número de mortes</strong>.</p>
+      <div class="cta">
+        <a class="btn" href="#experimente">Aceitar o desafio</a>
+        <a class="btn ghost" href="#gameplay">Ver gameplay</a>
+      </div>
+      <p class="hero-note">Dica: nenhuma. Não confie em nada.</p>
+    </div>
+    <div class="spikes" aria-hidden="true"></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>RAIVA</span><span>▲</span><span>TENTE DE NOVO</span><span>▲</span><span>NÃO CONFIE NO CHÃO</span><span>▲</span><span>ISSO FOI INJUSTO</span><span>▲</span><span>MAIS UMA VEZ</span><span>▲</span>
+      <span>RAIVA</span><span>▲</span><span>TENTE DE NOVO</span><span>▲</span><span>NÃO CONFIE NO CHÃO</span><span>▲</span><span>ISSO FOI INJUSTO</span><span>▲</span><span>MAIS UMA VEZ</span><span>▲</span>
+    </div>
+  </div>
+
+  <!-- O JOGO -->
+  <section id="jogo" class="section">
+    <div class="wrap two">
+      <div>
+        <h2>Morrer faz parte.<br>Entender, também.</h2>
+        <p>Em <strong>Morri de Novo</strong> você controla um cubinho muito confiante atravessando fases que foram desenhadas para enganá-lo. Cada morte é uma pista: onde o espinho apareceu? O que se mexeu quando você pisou ali?</p>
+        <p>A graça não é só chegar na porta. É chegar lá <strong>sabendo o caminho</strong>, com o contador de mortes o mais baixo possível. Quem passa de primeira ou está mentindo, ou é o autor.</p>
+      </div>
+      <ul class="cards">
+        <li><b>01</b><h3>Armadilhas invisíveis</h3><p>Gatilhos escondidos derrubam o chão, movem espinhos e fazem portas fugirem.</p></li>
+        <li><b>02</b><h3>Contador de mortes</h3><p>Ele está sempre lá no canto, te julgando em silêncio.</p></li>
+        <li><b>03</b><h3>Reinício instantâneo</h3><p>Apertou <kbd>R</kbd>, voltou. Sem tela de carregamento, sem desculpa.</p></li>
+        <li><b>04</b><h3>Controles simples</h3><p>Setas para andar e pular. O difícil é o resto.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MUNDOS -->
+  <section id="mundos" class="section dark">
+    <div class="wrap">
+      <h2 class="center">Três mundos. Cada um pior que o anterior.</h2>
+      <div class="worlds">
+        <article class="world w1">
+          <span class="tag">Mundo 1 · 5 fases</span>
+          <h3>Nada aqui é o que parece.</h3>
+          <p>O aquecimento. Espinhos no chão, buracos e uma plataforma suspeitamente amigável.</p>
+          <div class="scene"><i class="p"></i><i class="sp"></i><i class="sp"></i><i class="door"></i></div>
+        </article>
+        <article class="world w2">
+          <span class="tag">Mundo 2 · 5 fases</span>
+          <h3>Agora as armadilhas também mentem.</h3>
+          <p>Serras giratórias, paredes de espinhos e blocos que decidem sair do lugar.</p>
+          <div class="scene"><i class="p"></i><i class="saw"></i><i class="saw s2"></i><i class="door"></i></div>
+        </article>
+        <article class="world w3">
+          <span class="tag">Mundo 3 · 5 fases</span>
+          <h3>Agora é sério. Boa sorte.</h3>
+          <p>Fases longas, combinações cruéis e zero respeito pela sua pressão arterial.</p>
+          <div class="scene"><i class="p"></i><i class="sp"></i><i class="saw"></i><i class="door"></i></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIMENTE -->
+  <section id="experimente" class="section">
+    <div class="wrap">
+      <h2 class="center">Experimente aqui mesmo</h2>
+      <p class="center sub">Mini-fase de degustação. Use <kbd>←</kbd> <kbd>→</kbd> para andar, <kbd>↑</kbd> ou <kbd>espaço</kbd> para pular, <kbd>R</kbd> para recomeçar.</p>
+      <div class="game-frame">
+        <div class="hud"><span>DEGUSTAÇÃO · FASE 0 / ∞</span><span class="deaths">MORTES <b id="deaths">0</b></span></div>
+        <canvas id="game" width="800" height="360" tabindex="0" aria-label="Mini jogo Morri de Novo"></canvas>
+        <p id="taunt" class="taunt">Parece fácil, né?</p>
+        <div class="touch">
+          <button data-k="left" aria-label="Esquerda">◀</button>
+          <button data-k="jump" aria-label="Pular">PULAR</button>
+          <button data-k="right" aria-label="Direita">▶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMEPLAY -->
+  <section id="gameplay" class="section dark">
+    <div class="wrap">
+      <h2 class="center">Gameplay real. Mortes reais.</h2>
+      <p class="center sub">Olha o contador no canto subindo enquanto o jogador tenta entender o Mundo 2.</p>
+      <div class="video-frame">
+        <video src="assets/gameplay.mp4" poster="assets/poster.jpg" controls preload="metadata" playsinline></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESAFIO -->
+  <section id="desafio" class="section">
+    <div class="wrap narrow">
+      <h2 class="center">Qual é o seu recorde?</h2>
+      <p class="center sub">Zerou o jogo? Anote o total de mortes aqui e tente baixar. Fica salvo só no seu navegador.</p>
+      <form id="scoreForm" class="score">
+        <label for="mortes">Mortes na run completa</label>
+        <div class="row">
+          <input id="mortes" type="number" min="0" inputmode="numeric" placeholder="ex.: 87" required>
+          <button class="btn" type="submit">Registrar</button>
+        </div>
+        <p id="scoreMsg" class="score-msg" aria-live="polite"></p>
+        <ul id="scoreList" class="score-list"></ul>
+      </form>
+      <div class="tiers">
+        <div><b>0–20</b><span>Cheater?</span></div>
+        <div><b>21–60</b><span>Respeitável</span></div>
+        <div><b>61–150</b><span>Humano normal</span></div>
+        <div><b>151+</b><span>Persistente (e com raiva)</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="logo">MORRI<span>DE</span>NOVO</p>
+  <p>Projeto de faculdade, feito em Construct 3 por um grupo que também morreu várias vezes testando.</p>
+  <p class="small">Título de trabalho do jogo: <em>Fase Traiçoeira</em></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
